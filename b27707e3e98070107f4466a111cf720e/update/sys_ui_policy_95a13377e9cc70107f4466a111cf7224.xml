@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_cdltd_car_hire_car_hire">location=cdb35b33e98c70107f4466a111cf7243^EQ<item display_table="cmn_location" display_value="Other" endquery="false" field="location" goto="false" newquery="false" operator="=" or="false" value="cdb35b33e98c70107f4466a111cf7243"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+g_form.showFieldMsg("location","Please select other if you dont see your location and add the location in other location field", "warning");
+	alert("fill the other location field");
+}]]></script_true>
+        <set_values/>
+        <short_description>show other location field if other is seletced in Location </short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-18 08:46:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>95a13377e9cc70107f4466a111cf7224</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>show other location field if other is seletced in Location </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Car Hire Management" source="x_cdltd_car_hire">b27707e3e98070107f4466a111cf720e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Car Hire Management">b27707e3e98070107f4466a111cf720e</sys_scope>
+        <sys_update_name>sys_ui_policy_95a13377e9cc70107f4466a111cf7224</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-18 08:52:16</sys_updated_on>
+        <table>x_cdltd_car_hire_car_hire</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>
